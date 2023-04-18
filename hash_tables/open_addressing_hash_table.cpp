@@ -49,7 +49,7 @@ private:
 	// Kvadratno trazenje
 	unsigned int probe(int key) {
 		static int coefficient = 0;
-		int result = (key + coefficient++ * coefficient) % this->size;
+		int result = (key + coefficient * coefficient) % this->size;
 		coefficient++;
 		return result;
 	}
